@@ -20,5 +20,5 @@ $('.card').owlCarousel({
 })
 
 $('.btn').click(function(){
-    $('.menu-mobile').slideToggle('show')
+$('.menu-mobile').slideToggle('show')
 })

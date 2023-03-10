@@ -413,7 +413,8 @@ section.container {
   width: 150px;
   height: 2px;
   background: #b48c56;
-  margin-bottom: 140px;
+  margin-right: 70px;
+  margin-bottom: 10px;
   
 }
 
@@ -423,13 +424,13 @@ section.container {
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 15px;
-  margin-top: 8px;
+ margin-bottom: 50px;
  
 
 }
 
 
-#products .container .cardi {
+#products .container .card {
   width: 60%;
   height: 80vh;
   margin:  0 auto;
@@ -439,7 +440,7 @@ section.container {
   flex-wrap: wrap;
 }
 
-#products .container .cardi .box {
+#products .container .card .box {
   width: 100%;
   height: 65vh;
   background: rgba(255, 255, 255, 0.5);
@@ -450,30 +451,31 @@ section.container {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-#products .container .cardi .box .icon {
+#products .container .card .box .icon {
   width: 50px;
-  height: 60px;
+  height: 50px;
   background: #302725;
   text-align: center;
   line-height: 80px;
   margin-top: 60px;
+  margin-bottom: 90px;
   cursor: pointer;
 }
 
-#products .container .cardi .box .icon ion-icon {
+#products .container .card .box .icon ion-icon {
   color: #f0f8ff;
   font-size: 1.6rem;
 }
 
 
-#products .container .cardi .box img {
-  width: 100px;
-  margin-top: 35px;
+#products .container .card .box img {
+  width: 200px;
+  margin-top: 40px;
 
 }
 
 
-#products .container .cardi .box h1 {
+#products .container .card .box h1 {
   margin-top: 30px;
   font-family: 'Belleza', sans-serif;
   font-weight: 200;
@@ -481,7 +483,7 @@ section.container {
 }
 
 
-#products .container .cardi .box p {
+#products .container .card .box p {
   font-family: 'Bebas Neue', cursive;
   font-size: 1.2rem;
   letter-spacing: 3px;
@@ -490,143 +492,314 @@ section.container {
 }
 
 
+.owl-dot{
+    width: 15px;
+    height: 15px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 3px solid #B48C56!important;
+}
+.owl-dot.active{
+    width: 45px;
+    border-radius: 15px;
+}
 
 
 
 
+/* ....... TEAM ......... */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container1 {
+#team .container {
+  background: url(imagens/bg10.jpg) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0  50px;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
-  max-height: 800px;
-  max-width: 1280px;
-  min-height: 600px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  }
-  
-  .border { 
-  height: 369px;
-  width: 290px;
-  background: transparent;
-  border-radius: 10px;
-  transition: border 1s;
-  position: relative;
-  }
-  
-  border.hover { 
-  border: 1px solid #fff;
-  }
-  
-  .cards {
-  display: flex;
-  justify-content: center;
-  }
-  .card {
-  height: 379px;
-  width: 300px;
-  background: #808080;
-  border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 70px 63px -60px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  }
-  
-  .card0 {
-  background: url("imagens/aline.PNG")
-  center center no-repeat;
-  background-size: 310px;
-  }
-  
-  .card0:hover {
-  background: url("imagens/aline.PNG")
-  left center no-repeat;
-  background-size: 600px;
-  }
-  .card0:hover h4 {
-  opacity: 1;
-  }
-  .card0:hover .fab {
-  opacity: 1;
-  }
   
   
-  .card1 {
-  background: url("imagens/ariana.PNG")
-  center center no-repeat;
-  background-size: 310px;
-  }
-  .card1:hover {
-  background: url("imagens/ariana.PNG")
-  left center no-repeat;
-  background-size: 600px;
-  }
-  .card1:hover h4 {
-  opacity: 1;
-  }
-  .card1:hover .fab {
-  opacity: 1;
-  }
-  
-  h4  {
-  font-family: 'Amatic SC', cursive;
-  font-size: 4em;
-  color: #fff;
-  margin: 20px;
-  opacity: 0;
-  transition: opacity 1s;
-  }
+}
 
-  h5 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 4em;
-    text-align: center;
-  }
+#team .container .content p{
+  font-family: 'Belleza', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 90px;
   
   
+}
+#team .container .content h2{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  text-align: center;
   
-  .fab {
-  opacity: 0;
-  transition: opacity 1s;
-  }
-  .icons {
-  position: absolute;
-  fill: #fff;
-  color: #fff;
-  height: 130px;
-  top: 226px;
-  width: 50px;
+}
+#team .container .content .cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 90px;
+}
+#team .container .content .image img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  
+}
+#team .container .content .title h1{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-left: 30px;
+}
+#team .container .content .title p{
+  font-family: 'Belleza', sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+
+
+/* ....... NEWS ......... */
+
+#news .container{
+  background: url(imagens/bg3.png) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+}
+#news .container .title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#news .container .title .line{
+  width: 150px;
+  height: 2px;
+  background: #B48C56;
+  margin-bottom: 10px;
+}
+#news .container .title h1{
+  margin-top:20px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 15px;
+  
+}
+#news .container .content{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+#news .container .content .box{
+  width: 30%;
+  height: 50vh;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  }
-  
-  
-  
-  footer {
-  margin-top: 1000px;
-  background-color: #f2eaea;
-  }
+  justify-content: center;
+  margin-top: 160px;
+  transition: 0.3s
+}
+#news .container .content .box h3{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #B48C56;
+  padding: 5px 20px;
+  color: #fff;
+}
+#news .container .content .box:hover{
+  background: rgba(48, 39, 37, 0.9);
+  height: 60vh;
+}
+#news .container .content .box img{
+  width: 180px;
+}
+#news .container .content .box h1{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin-top: 15px;
+  color: #737373;
+}
+#news .container .content .box:hover h1{
+  color: #ffffff;
+}
+#news .container .content .box p{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #B48C56;
+  letter-spacing: 5px;
+  margin-top: -3px;
+}
+#news .container .box button{
+  padding: 10px 20px;
+  border: none;
+  background: #B48C56;
+  color: #fff;
+  font-family: 'Belleza', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  transform: translateY(-40px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#news .container .box:hover button{
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+    .container1 {
+      height: 100vh;
+      width: 100vw;
+      max-height: 800px;
+      max-width: 1280px;
+      min-height: 600px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+      }
+      
+      .border { 
+      height: 369px;
+      width: 290px;
+      background: transparent;
+      border-radius: 10px;
+      transition: border 1s;
+      position: relative;
+      }
+      
+      border.hover { 
+      border: 1px solid #fff;
+      }
+      
+      .cards {
+      display: flex;
+      justify-content: center;
+      }
+      .cardi {
+      height: 379px;
+      width: 300px;
+      background: #808080;
+      border-radius: 10px;
+      transition: background 0.8s;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 70px 63px -60px #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      }
+      
+      .cardi0 {
+      background: url("imagens/aline.PNG")
+      center center no-repeat;
+      background-size: 310px;
+      }
+      
+      .cardi0:hover {
+      background: url("imagens/aline.PNG")
+      left center no-repeat;
+      background-size: 600px;
+      }
+      .cardi0:hover h4 {
+      opacity: 1;
+      }
+      .cardi0:hover .fab {
+      opacity: 1;
+      }
+      
+      
+      .cardi1 {
+      background: url("imagens/ariana.PNG")
+      center center no-repeat;
+      background-size: 310px;
+      }
+      .cardi1:hover {
+      background: url("imagens/ariana.PNG")
+      left center no-repeat;
+      background-size: 600px;
+      }
+      .cardi1:hover h4 {
+      opacity: 1;
+      }
+      .cardi1:hover .fab {
+      opacity: 1;
+      }
+      
+      h4  {
+      font-family: 'Amatic SC', cursive;
+      font-size: 4em;
+      color: #fff;
+      margin: 20px;
+      opacity: 0;
+      transition: opacity 1s;
+      }
+
+      h5 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 4em;
+        text-align: center;
+      }
+      
+      
+      
+      .fab {
+      opacity: 0;
+      transition: opacity 1s;
+      }
+      .icons {
+      position: absolute;
+      fill: #fff;
+      color: #fff;
+      height: 130px;
+      top: 226px;
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      }
+      
+      
+    
+      footer {
+      margin-top: 1000px;
+      background-color: #f2eaea;
+      }
+
+
+
+
+
+
+
