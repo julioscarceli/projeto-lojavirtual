@@ -620,7 +620,8 @@ section.container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 160px;
+  margin-top: 200px;
+  padding-bottom: 30px;
   transition: 0.3s
 }
 #news .container .content .box h3{
@@ -779,7 +780,7 @@ section.container {
 
   h5 {
     font-family: 'Amatic SC', cursive;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     padding-top: 200px;
     
@@ -957,12 +958,15 @@ article {
 
 @media screen and (max-width :1024px) {
 
+
+
+
  /*      header       */
 
  header{
   background: none;
   justify-content:space-between;
-  padding: 0 50px;
+  padding: 0 60px;
 }
 header .menu{
   display: none;
@@ -971,7 +975,7 @@ header .menu-mobile{
   display: block;
   width: 350px;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.771);
   position: fixed;
   top: 0;
   right: 0;
@@ -985,6 +989,7 @@ header .menu-mobile ul{
 header .menu-mobile ul li{
   list-style: none;
   padding: 40px 0;
+  padding-right: 80px;
   text-align: center;
 
 }
@@ -1008,9 +1013,183 @@ header .btn ion-icon{
   color: #ddb06e;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-right: 100px;
+  
 }
 
+
+#home .container {
+  background:url(imagens/bg3aa.png);
 }
+
+#home .container .content {
+  width: 70%;
+}
+
+#home .container .content h1 {
+  font-size: 2rem;
+}
+
+#home .container .content p {
+  font-size: 1.1rem;
+}
+
+#home .container .content span {
+  font-size: 2rem;
+}
+
+#home .container .content .button {
+  padding-top: 70px;
+}
+
+
+
+
+
+
+
+/*      BRANCH      */
+ #branch .container .content .box {
+  width: 25%;
+  height: 70%;
+ }
+
+ #branch .container  .box button {
+  padding: 8px 20px; 
+  margin-top: 15px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ /*      about       */
+
+ #about .container .title h1{
+  font-size: 1.5rem;
+  
+ 
+  
+}
+#about .container .title{
+  width: 70%;
+  padding-top: 170px;
+  margin-left: 150px;
+}
+#about .container .title .call{
+  width: 60%;
+  top: 60px;
+  left: 90px;
+}
+#about .container .title .call h2{
+  font-size: 2rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#about .container .title .call p{
+  font-size: 1.2rem;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+/*      products       */
+#products .container .card{
+  width: 80%;
+}
+#products .container .card .box{
+  padding: 200px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*      team       */
+
+ #team .container .content .image img{
+  width: 80px;
+  height: 80px;
+}
+
+
+
+
+
+
+
+
+/*      news       */
+
+#news .container .content .box h3{
+  font-size: 1.1rem;
+}
+#news .container .content .box img{
+  width: 100px;
+}
+#news .container .content .box h1{
+  font-size: 1.2rem;
+}
+#news .container .content .box p{
+  font-size: 1.1rem;
+}
+#news .container .box button{
+  padding: 8px 18px;
+  font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+     /*      footer       */
+
+     #footer .container .content .left h1{
+      font-size: 1.6rem;
+  }
+  #footer .container .content .left p{
+      font-size: 1.1rem;
+      margin-top: 20px;
+  }
+  #footer .container .content .right button{
+      margin-left: 50px;
+  }
+  #footer .container .info .box ion-icon{
+      font-size: 1.2rem;
+  }
+  #footer .container .copyright p{
+      font-size: 1rem;
+  }
+
+}
+
+
+
+
 
 
 
