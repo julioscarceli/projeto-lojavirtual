@@ -92,20 +92,16 @@ header .btn{
 
 
 
-/*.....SECTION .......*/
-section.container {
-    max-width: 1680px;
-    width: 100%;
-    height: 90vh;
-    margin: 0 auto;
-}
 
 
 /* ....... HOME ......... */
 
 #home .container {
   background: url(imagens/bg3.jpg) no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  width: 100vw;
+  
+  
  
   
 }
@@ -190,6 +186,7 @@ section.container {
 #branch .container{
   background: url(imagens/bg3.png) no-repeat;
   background-size: 100% 100%;
+  width: 100vw;
 }
 
 #branch .container .title{
@@ -305,7 +302,7 @@ section.container {
 #about .container{
   background: url(imagens/bg5.jpg) no-repeat;
   background-size: 100% 100%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -403,6 +400,7 @@ section.container {
 #products .container {
   background: url(imagens/bg3.png) no-repeat;
   background-size: 100% 100%;
+  width: 100vw;
  
   
 }
@@ -517,13 +515,13 @@ section.container {
 /* ....... TEAM ......... */
 
 #team .container {
-  background: url(imagens/bg10.jpg) no-repeat;
+  background: url(imagens/bg3.png) no-repeat;
   background-size: 100% 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 0  50px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   
   
@@ -553,8 +551,8 @@ section.container {
   margin-left: 90px;
 }
 #team .container .content .image img{
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
@@ -580,7 +578,7 @@ section.container {
 #news .container{
   background: url(imagens/bg3.png) no-repeat;
   background-size: 100% 100%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   
 }
@@ -810,6 +808,7 @@ section.container {
 
 article {
   background: url(imagens/bg3.png) no-repeat;
+  width: 100vw;
   }
 
 
@@ -1773,6 +1772,7 @@ width: 100vw;
 }
 #news .container .content .box:hover{
   height: 45vh;
+}
 
 
 
