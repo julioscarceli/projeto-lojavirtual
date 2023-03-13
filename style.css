@@ -101,10 +101,8 @@ header .btn{
   background-size: 100% 100%;
   width: 100vw;
   
-  
- 
-  
 }
+
 
 #home .container .content {
     width: 60%;
@@ -112,7 +110,7 @@ header .btn{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 70px;
+    
     
 }
 
@@ -1665,7 +1663,7 @@ width: 100vw;
 
 
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 320px){
  
  
  /*     HEADER     */
@@ -1683,20 +1681,26 @@ width: 100vw;
   /*     HOME     */
 
   #home .container {
-    width: 200%;
+    background: url(imagens/bg3mobile.png) no-repeat;
+    width: 210%;
 }
+
 #home .container .content h1{
     font-size: 1.5rem;
 }
+
 #home .container .content p{
     font-size: 0.9rem;
 }
+
 #home .container .content span{
     font-size: 1.5rem;
 }
+
 #home .container .content .button{
     padding-top:20px ;
 }
+
 #home .container .content .button button{
     font-size: 0.9rem;
 }
@@ -1725,7 +1729,7 @@ width: 100vw;
 
 
 
-
+ /*      ABOUT       */
 
 #about .container{
   height: 70vh;
@@ -1751,7 +1755,7 @@ width: 100vw;
 }
 
 
-
+ /*      TEAM       */
 
 #team .container{
   height: 85vh;
@@ -1762,7 +1766,7 @@ width: 100vw;
 }
 
 
-
+ /*      news       */
 
 #news .container{
   height:100vh;
@@ -1781,7 +1785,7 @@ width: 100vw;
 
 
 
-
+ /*      FOOTER       */
 
 }
 #footer .container{
