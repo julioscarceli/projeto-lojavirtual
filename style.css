@@ -1704,6 +1704,30 @@ width: 100vw;
 
 
 
+
+ /*      BRANCH       */
+
+ #branch .container {
+  width: 200%;
+}
+
+#branch .container .content .box{
+  width: 39%;
+  height: 57vh;
+
+}
+
+#branch .container .content .box img {
+  width: 180px;
+}
+
+
+
+
+
+
+
+
 #about .container{
   height: 70vh;
 }
