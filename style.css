@@ -1730,6 +1730,7 @@ width: 100vw;
 
 #about .container{
   height: 70vh;
+  width: 200%;
 }
 #about .container .title{
   margin-top: -20px;
