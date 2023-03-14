@@ -28,6 +28,14 @@ body {
     
 }
 
+/*      SECTION       */
+section .container{
+  max-width: 1680px;
+  width: 100vw;
+  height: 85vh;
+  margin: 0 auto;
+}
+
 
 header {
     max-width: 1680px;
@@ -1797,6 +1805,7 @@ width: 100vw;
   #home .container {
     background: url(imagens/bg3mobile.png) no-repeat;
     width: 200%;
+    
 }
 
 #home .container .content h1{
