@@ -123,7 +123,7 @@ header .btn{
     letter-spacing: 10px;
     margin-top: 150px;
     margin-bottom: 40px;
-    margin-left: 50px;
+    margin-left: 70px;
     color: #302725;
 }
 
@@ -134,7 +134,7 @@ header .btn{
     color: #737373;
     margin-bottom: 120px;
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 #home .container .content span {
@@ -142,7 +142,7 @@ header .btn{
     font-family: 'Bebas Neue', cursive;
     color: #302725;
     letter-spacing: 5px;
-    margin-left: 50px;
+    margin-left: 70px;
     
     
 
@@ -151,7 +151,7 @@ header .btn{
 
 #home .container .content .button {
     margin-top: 1px;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 #home .container .content .button button {
