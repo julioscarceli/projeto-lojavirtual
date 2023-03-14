@@ -1661,19 +1661,133 @@ width: 100vw;
 
 
 
+@media screen and (max-width: 600px){
+
+  /*      home       */
+   #home .container{
+     background: url(imagens/bg3680.png) no-repeat;
+     background-size: 100% 100%;
+     width: 100vw;
+     
+ }
+ 
+ 
+ 
+  /*      BRANCH       */
+ 
+ #branch .container {
+   width: 100vw;
+ }
+ 
+ #branch .container .content .box{
+   width: 29%;
+   height: 57vh;
+ 
+ }
+ 
+ #branch .container .content .box img {
+   width: 180px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+  /*      ABOUT       */
+ 
+ #about .container{
+ width: 100vw;
+ }
+ 
+ #about .container .title .call{
+   width: 100%;
+   align-items:center;
+   left: 0;
+ }
+ 
+ #about .container .title .call h2{
+   font-size: 1.7rem;
+   margin-bottom: 40px;
+   margin-top: 40px;
+   padding-left: 200px;
+   
+   
+ }
+ #about .container .title .call p{
+   font-size: 1.2rem;
+   padding-left: 190px;
+  
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /*      FOOTER      */
+ 
+ #footer .container{
+     background: url(image/res2.png) no-repeat;
+     background-size: contain;
+     height: 100vh;
+     padding-top: 30px;
+ }
+ #footer .container .content .right{
+     height:30vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ #footer .container .content .right button{
+     margin-top: 10px;
+ }
+ #footer .container .info{
+     height: 50vh;
+     flex-direction: column;
+     align-items: center;
+ }
+ #footer .container .info .box{
+     width: 80%;
+     align-items: center;
+     margin: 5px;
+ }
+ #footer .container .info .box h1{
+     margin: 0;
+ }
+ #footer .container .copyright p{
+     margin-bottom:20px;
+ }
+ 
+ }
+ 
 
 
-@media screen and (max-width: 320px){
+
+
+
+@media screen and (max-width: 412px){
  
  
  /*     HEADER     */
  
   header .menu-mobile{
       width: 210px;
+      display: block;
+      width: 270px;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.771);
+      position: fixed;
+      top: 0;
+      right: 0;
   }
   header .menu-mobile ul li a{
       font-size: 1rem;
   }
+
+  
 
 
 
@@ -1682,7 +1796,7 @@ width: 100vw;
 
   #home .container {
     background: url(imagens/bg3mobile.png) no-repeat;
-    width: 210%;
+    width: 200%;
 }
 
 #home .container .content h1{
@@ -1715,8 +1829,8 @@ width: 100vw;
 }
 
 #branch .container .content .box{
-  width: 39%;
-  height: 57vh;
+  width: 29%;
+  height: 62vh;
 
 }
 
@@ -1755,10 +1869,18 @@ width: 100vw;
 }
 
 
+ /*     PRODUCTS    */
+
+ #products .container {
+  width: 200%;
+  }
+  
+
  /*      TEAM       */
 
 #team .container{
   height: 85vh;
+  width: 200%;
 }
 #team .container .content p{
   font-size: 1rem;
@@ -1769,6 +1891,7 @@ width: 100vw;
  /*      news       */
 
 #news .container{
+  width: 200%;
   height:100vh;
 }
 #news .container .content{
@@ -1780,7 +1903,9 @@ width: 100vw;
 
 
 
-
+#article {
+  width: 200%;
+}
 
 
 
@@ -1789,7 +1914,7 @@ width: 100vw;
 
 }
 #footer .container{
-    height: 110vh;
+    height: 150vh;
 }
 #footer .container .content{
     height: 50vh;
