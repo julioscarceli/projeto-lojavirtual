@@ -28,6 +28,10 @@ body {
     
 }
 
+.mobile {
+  width: 100vw;
+}
+
 /*      SECTION       */
 section .container{
   max-width: 1680px;
