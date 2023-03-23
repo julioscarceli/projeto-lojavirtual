@@ -2,7 +2,7 @@
  projeto loja virtual html, css e js
 
 
-https://julioscarceli.github.io/projeto-lojavirtual/
 
+https://julioscarceli.github.io/projeto-lojavirtual/
 
 
