@@ -31,13 +31,6 @@ body {
 
 
 
-/*      SECTION       */
-section .container{
-  max-width: 1680px;
-  width: 100vw;
-  height: 85vh;
-  margin: 0 auto;
-}
 
 
 header {
@@ -48,7 +41,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--primary);
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     left: 0;
     right: 0;
@@ -101,6 +94,13 @@ header .btn{
   display: none;
 }
 
+/*      SECTION       */
+section .container{
+  max-width: 1680px;
+  width: 100vw;
+  height: 85vh;
+  margin: 0 auto;
+}
 
 
 
@@ -108,19 +108,20 @@ header .btn{
 /* ....... HOME ......... */
 
 #home .container {
-  background: url(imagens/bg3back1.png) no-repeat;
-  background-size: 100% 100%;
-  width: 100vw;
+  background: url(imagens/bg1.png) no-repeat;
+  background-size: cover;
+
   
 }
 
 
 #home .container .content {
-    width: 60%;
-    height: 100vh;
+    width: 50%;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 0 60px;
     
     
 }
@@ -132,9 +133,8 @@ header .btn{
     font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 10px;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 40px;
-    margin-left: 70px;
     color: #302725;
 }
 
@@ -145,24 +145,20 @@ header .btn{
     color: #737373;
     margin-bottom: 120px;
     margin-top: 40px;
-    margin-left: 70px;
+    
 }
+
 
 #home .container .content span {
     font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;
     color: #302725;
     letter-spacing: 5px;
-    margin-left: 70px;
-    
-    
-
 }
 
 
 #home .container .content .button {
-    margin-top: 1px;
-    margin-left: 70px;
+    padding-top: 50px;
 }
 
 #home .container .content .button button {
@@ -174,7 +170,7 @@ header .btn{
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.5s ease;
-    
+ 
 }
 
 #home .container .content .button button:hover{
@@ -195,7 +191,7 @@ header .btn{
 #branch .container{
   background: url(imagens/bg3.png) no-repeat;
   background-size: 100% 100%;
-  width: 100vw;
+  
 }
 
 #branch .container .title{
@@ -204,22 +200,23 @@ header .btn{
   justify-content: center;
   flex-direction: column;
   padding-top: 60px;
+  padding-top: 100px;
 }
 
 #branch .container .title .line {
-  width:  200px;
+  width:  150px;
   height: 2px;
   background: #b48c56;
 }
 
 #branch .container .title h1{
-
+  margin-top: 20px;
   font-family: 'Bebas Neue', cursive;
   font-size: 2rem;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 15px;
-  margin-top: 5px;
+  
   
 
 }
@@ -243,7 +240,7 @@ header .btn{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 80px;
   transition: 0.3s;
 }
 
@@ -306,101 +303,6 @@ header .btn{
 
 
 
-/* ....... ABOUT ......... */
-
-#about .container{
-  background: url(imagens/bg5.jpg) no-repeat;
-  background-size: 100% 100%;
-  width: 100vw;
-  height: 100vh;
-}
-
-#about .container .title{
-  width: 70%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 100px;
-}
-
-
-#about .container .title .line{
-  width: 150px;
-  height: 2px;
-  background: #b48c56;
-}
-
-
-
-#about .container .title h1{
-  margin-top: 20px;
-  text-transform: uppercase;
-  font-family:'Bebas Neue', cursive;
-  font-size: 2rem;
-  font-weight: 200;
-  letter-spacing: 15px;
-}
-
-
-
-#about .container .title .call{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  top: 100px;
-  left: 200px;
-}
-
-#about .container .title .call h2 {
-  font-family:'Bebas Neue', cursive;
-  font-weight: 200;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  margin-bottom: 80px;
-  letter-spacing: 10px;
-  min-width: 500px;
-  margin-left: -380px;
-  margin-top: -60px
-}
-
-#about .container .title .call p {
-  font-family: 'Belleza', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  min-width: 350px;
-  margin-left: -370px;
-  
-}
-
-
-
-
-#about .container .title .call button {
-  margin-top: 40px;
-  margin-left: -370px;
-  padding: 10px 30px;
-  border: none;
-  background: #302725;
-  color: #f0f8ff;
-  font-family: 'Belleza', sans-serif;
-  font-size: 0.8rem;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-#about .container .title .call button:hover {
-  transform: scale(1);
-  border: 2px solid #302725;
-  background: none;
-  color: #302725;
-  font-weight: 600;
-}
-
-
 
 
 
@@ -420,6 +322,7 @@ header .btn{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 250px;
 }
 
 
@@ -532,9 +435,12 @@ header .btn{
   padding: 0  50px;
   width: 100vw;
   height: 100vh;
+  padding-top: 300px;
   
   
 }
+
+
 
 #team .container .content p{
   font-family: 'Belleza', sans-serif;
@@ -542,6 +448,7 @@ header .btn{
   margin-bottom: 20px;
   text-align: center;
   margin-left: 90px;
+  padding-top: 350px;
   
   
 }
@@ -577,6 +484,7 @@ header .btn{
   font-family: 'Belleza', sans-serif;
   margin-top: 10px;
   margin-left: 10px;
+  margin-top: -300px;
 }
 
 
@@ -596,6 +504,7 @@ header .btn{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 350px;
 }
 #news .container .title .line{
   width: 150px;
@@ -705,6 +614,7 @@ header .btn{
   align-items: center;
   margin: 0 auto;
   padding-bottom: 100px;
+  
   }
   
   .border { 
@@ -790,7 +700,7 @@ header .btn{
     font-family: 'Amatic SC', cursive;
     font-size: 3em;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 350px;
     
   }
   
@@ -922,17 +832,17 @@ article {
   width: 80%;
   height: 1px;
   background: #B48C56;
-  margin-top: 60px;
+  margin-top: 160px;
+  
 }
 #footer .container .copyright p{
   font-family: 'Belleza', sans-serif;
-  margin-top: 25px;
   font-size: 1.1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #302725;
-  margin-bottom: 10px;
   font-weight: bolder;
+ 
 }
 
 
@@ -1028,8 +938,8 @@ header .btn ion-icon{
 
 
 #home .container {
-  background:url(imagens/bg3j.png);
-  width: 100vw;
+  background-size: 105% 100%;
+  
 }
 
 #home .container .content {
@@ -1038,7 +948,7 @@ header .btn ion-icon{
 
 #home .container .content h1 {
   font-size: 2rem;
-  margin-top: -100px;
+  
 }
 
 #home .container .content p {
@@ -1050,7 +960,7 @@ header .btn ion-icon{
 }
 
 #home .container .content .button {
-  padding-top: 10px;
+  padding-top: 70px;
 }
 
 
@@ -1067,8 +977,6 @@ header .btn ion-icon{
 }
  #branch .container .content .box {
   width: 25%;
-  height: 70%;
-  margin-top: 100px;
  }
 
  #branch .container  .box button {
@@ -1086,58 +994,11 @@ header .btn ion-icon{
 
 
 
- /*      about       */
-
- #about .container {
-  width: 100vw;
- }
-
- #about .container .title h1{
-  font-size: 1.5rem;
-  
-  
-}
-
-#about .container .title{
-  width: 70%;
-  padding-top: 130px;
-  margin-left: 150px;
-}
-#about .container .title .call{
-  width: 60%;
-  top: 20px;
-  left: 90px;
-}
-#about .container .title .call h2{
-  font-size: 2rem;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  padding-left: 30px;
-}
-#about .container .title .call p{
-  font-size: 1.2rem;
-  padding-left: 30px;
- 
-}
-
-#about .container .title .call button {
-  margin-left: -340px;
-}
-
-
-
-
-
-
-
 
 
 
 /*      products       */
 
-#products .container {
-width: 100vw;
-}
 
 #products .container .card{
   width: 80%;
@@ -1151,29 +1012,19 @@ width: 100vw;
 
 
 
-
-
-
-
-
-
-
  /*      team       */
  
  
- #team .container {
-  width: 100vw;
- }
 
  #team .container {
-  background: url(imagens/bg3.png) no-repeat;
-  background-size: 100% 100%;
+  
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 0  50px;
   width: 100vw;
   height: 100vh;
+  padding-top: 750px;
   
   
 }
@@ -1184,6 +1035,7 @@ width: 100vw;
   margin-bottom: 20px;
   text-align: center;
   margin-left: 90px;
+  padding-top: 350px;
   
   
 }
@@ -1200,6 +1052,11 @@ width: 100vw;
   align-items: center;
   justify-content: space-evenly;
   margin-left: 90px;
+  
+}
+
+#team .container .content .image {
+  padding-bottom: 350px;
 }
 #team .container .content .image img{
   width: 300px;
@@ -1208,18 +1065,24 @@ width: 100vw;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
   
+  
 }
 #team .container .content .title h1{
   font-family: 'Bebas Neue', cursive;
   font-weight: 300;
   letter-spacing: 5px;
-  margin-left: 30px;
+  margin-left: 40px;
+  margin-bottom: -350px;
+  margin-top: -250px;
+  
 }
 #team .container .content .title p{
   font-family: 'Belleza', sans-serif;
   margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 250px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 200px;
+
 }
 
 
@@ -1229,9 +1092,6 @@ width: 100vw;
 
 /*      news       */
 
-#news .container{
-  width: 100vw;
-}
 
 #news .container .content .box h3{
   font-size: 1.1rem;
@@ -1258,7 +1118,7 @@ width: 100vw;
   }
 
   h5 {
-    margin-top: -250px;
+    padding-top: 400px;
    }
   
 
@@ -1294,12 +1154,15 @@ width: 100vw;
 
 
 
+
+
+
 @media screen and (max-width: 750px){
     /*     header       */
   
   header .menu-mobile {
     display: block;
-    width: 270px;
+    width: 240px;
     height: 100vh;
     background: rgba(0, 0, 0, 0.771);
     position: fixed;
@@ -1309,23 +1172,23 @@ width: 100vw;
   
    /*     home       */
   
-  #home .container{
+  #home .container{ 
     
-      background:url(imagens/bg3860.png);
-      width: 100vw;
-
+      background-size: 106% 100%;
+      
   }
 
 
  /*     branch     */
 
   #branch .container{
-      padding: 5px;
+      padding: 10px;
       height: 100vh;
       
   }
   #branch .container .title{
-      padding-top: -200px;
+      padding-top: 100px;
+      
   }
   #branch .container .content{
       height: 70vh;
@@ -1334,8 +1197,8 @@ width: 100vw;
       flex-wrap: wrap;
   }
   #branch .container .content .box{
-      width: 30%;
-      height: 57vh;
+      width: 40%;
+      height: 65vh;
   }
   #branch .container .box h3{
       margin-bottom: 5px;
@@ -1343,11 +1206,12 @@ width: 100vw;
       letter-spacing: 1px;
   }
   #branch .container .box img{
-      width: 10px;
-      margin-bottom: -10px;
+      width: 50px;
+      height: 150px;
+      margin-bottom: -20px;
   }
   #branch .container .box h1{
-      margin-top: 25px;
+      margin-top: 55px;
       font-size: 1.1rem;
   }
   #branch .container .box p{
@@ -1364,101 +1228,20 @@ width: 100vw;
 
 
 
- /*     about     */
-
-  #about .container {
-      height: 70vh;
-      
-     
-  }
-
-  #about .container .title{
-    width: 70%;
-    padding-top: 100px;
-    margin-left: 150px;
-  }
-  #about .container .title .call{
-    width: 60%;
-    top: 20px;
-    left: 90px;
-  }
-  #about .container .title .call h2{
-    font-size: 2rem;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    padding-left: 90px;
-  }
-  #about .container .title .call p{
-    font-size: 1.2rem;
-    padding-left: 80px;
-   
-  }
-  
-  #about .container .title .call button {
-    margin-left: -290px;
-  }
-
 
 
 
  /*     PRODUCTS    */
 
 #products .container {
-padding-top: 100px;
+padding-top: 300px;
 }
 
 
+/*     TEAM    */
 
 
-
- /*     NEWS    */
-
-
- #news .container .content{
-  min-height: 100vh;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  margin-top: -60px;
-}
-
-#news .container .content .box{
-  width: 35%;
-  height: 42vh;
-  margin: 30px;
-}
-#news .container .content .box:hover{
-  height: 57vh;
-}
-#news .container .content .box img{
-  width: 200px;
-  
-}
-#news .container .box button{
-  padding: 3px;
-}
-
-#news .container .title .line{
-  width: 150px;
-  height: 2px;
-  background: #B48C56;
-  margin-bottom: 200px;
-}
-#news .container .title h1{
-  margin-top:20px;
-  text-transform: uppercase;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 2rem;
-  font-weight: 200;
-  letter-spacing: 15px;
-  
-}
-
-
- /*     TEAM    */
-
-
- #team .container {
+#team .container {
   width: 100vw;
  }
 
@@ -1471,6 +1254,7 @@ padding-top: 100px;
   padding: 0  50px;
   width: 100vw;
   height: 100vh;
+  padding-top: 950px;
   
   
 }
@@ -1511,6 +1295,7 @@ padding-top: 100px;
   font-weight: 300;
   letter-spacing: 5px;
   margin-left: 30px;
+  margin-top: 30px;
 }
 #team .container .content .title p{
   font-family: 'Belleza', sans-serif;
@@ -1521,13 +1306,155 @@ padding-top: 100px;
 
 
 
+
+
+
+ /*     NEWS    */
+
+
+ #news .container .content{
+  min-height: 100vh;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: -60px;
+}
+
+
+#news .container .content .box{
+  width: 35%;
+  height: 42vh;
+  margin: 40px;
+}
+#news .container .content .box:hover{
+  height: 63vh;
+}
+#news .container .content .box img{
+  width: 200px;
+  height: 170px;
+  
+}
+#news .container .box button{
+  padding: 3px;
+}
+
+#news .container .title .line{
+  width: 150px;
+  height: 2px;
+  background: #B48C56;
+  margin-bottom: 250px;
+  
+}
+#news .container .title h1{
+  margin-top:20px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 15px;
+  
+}
+
+
+ 
    /*      article       */
    #article  {
-    width: 100vw;
+   
     padding-top: 400px;
   }
 
+  
+    .cardi {
+    height: 329px;
+    width: 270px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+    
+    .cardi0 {
+    background: url("imagens/aline.PNG")
+    center center no-repeat;
+    background-size: 310px;
+    }
+    
+    .cardi0:hover {
+    background: url("imagens/aline.PNG")
+    left center no-repeat;
+    background-size: 600px;
+    }
+    .cardi0:hover h4 {
+    opacity: 1;
+    }
+    .cardi0:hover .fab {
+    opacity: 1;
+    }
+    
+    
+    .cardi1 {
+    background: url("imagens/ariana.PNG")
+    center center no-repeat;
+    background-size: 310px;
+    }
+    .cardi1:hover {
+    background: url("imagens/ariana.PNG")
+    left center no-repeat;
+    background-size: 600px;
+    }
+    .cardi1:hover h4 {
+    opacity: 1;
+    }
+    .cardi1:hover .fab {
+    opacity: 1;
+    }
+    
+    h4  {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+    }
+  
+    h5 {
+      font-family: 'Amatic SC', cursive;
+      font-size: 3em;
+      text-align: center;
+      padding-top: 350px;
+      
+    }
+    
+    
+    
+    .fab {
+    opacity: 0;
+    transition: opacity 1s;
+    }
+    .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+
  
+
+
+
 
  /*      footer       */
 
@@ -1568,65 +1495,206 @@ padding-top: 100px;
 
 
 
+
+
+
 @media screen and (max-width: 680px){
 
  /*      home       */
   #home .container{
-    background: url(imagens/bg3680.png) no-repeat;
-    background-size: 100% 100%;
-    width: 100vw;
-    
+    background: url(imagens/res1\ .png) no-repeat;
+    background-size: 100% 110%;
 }
 
 
 
  /*      BRANCH       */
 
-#branch .container {
+ #branch .container{
+  background: url(imagens/imagem-branca-grande.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+
+ /*-------- PRODUCTS ---------      */
+#products .container{
+  background: url(imagens/imagem-branca-grande.png) no-repeat;
+  background-size: contain;
+  height: 60vh;
+}
+#products .container .card .box{
+  background: rgba(236, 236, 236, 0.5);
+}
+
+#team .container {
   width: 100vw;
-}
+ }
 
-#branch .container .content .box{
-  width: 29%;
-  height: 57vh;
-
-}
-
-#branch .container .content .box img {
-  width: 180px;
-}
-
-
-
-
-
-
- /*      ABOUT       */
-
-#about .container{
-width: 100vw;
-}
-
-#about .container .title .call{
-  width: 100%;
-  align-items:center;
-  left: 0;
-}
-
-#about .container .title .call h2{
-  font-size: 1.7rem;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  padding-left: 200px;
+ #team .container {
+  background: url(imagens/imagem-branca-grande.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0  50px;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 1100px;
   
   
 }
-#about .container .title .call p{
+
+#team .container .content p{
+  font-family: 'Belleza', sans-serif;
   font-size: 1.2rem;
-  padding-left: 190px;
- 
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 90px;
+  
+  
+}
+#team .container .content h2{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  text-align: center;
+  
+}
+#team .container .content .cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 90px;
+}
+#team .container .content .image img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  
+}
+#team .container .content .title h1{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+#team .container .content .title p{
+  font-family: 'Belleza', sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 250px;
 }
 
+
+
+#news .container{
+  background: url(imagens/imagem-branca-grande.png) no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+#news .container .box button{
+  margin-top: 20px;
+}
+
+   /*      article       */
+   #article  {
+    background: url(imagens/imagem-branca-grande.png);
+    padding-top: 400px;
+  }
+
+  
+    .cardi {
+    height: 289px;
+    width: 220px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+    
+    .cardi0 {
+    background: url("imagens/aline.PNG")
+    center center no-repeat;
+    background-size: 310px;
+    }
+    
+    .cardi0:hover {
+    background: url("imagens/aline.PNG")
+    left center no-repeat;
+    background-size: 600px;
+    }
+    .cardi0:hover h4 {
+    opacity: 1;
+    }
+    .cardi0:hover .fab {
+    opacity: 1;
+    }
+    
+    
+    .cardi1 {
+    background: url("imagens/ariana.PNG")
+    center center no-repeat;
+    background-size: 310px;
+    }
+    .cardi1:hover {
+    background: url("imagens/ariana.PNG")
+    left center no-repeat;
+    background-size: 600px;
+    }
+    .cardi1:hover h4 {
+    opacity: 1;
+    }
+    .cardi1:hover .fab {
+    opacity: 1;
+    }
+    
+    h4  {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+    }
+  
+    h5 {
+      font-family: 'Amatic SC', cursive;
+      font-size: 3em;
+      text-align: center;
+      padding-top: 350px;
+      
+    }
+    
+    
+    
+    .fab {
+    opacity: 0;
+    transition: opacity 1s;
+    }
+    .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+ 
 
 
 
@@ -1672,301 +1740,116 @@ width: 100vw;
 
 
 
-@media screen and (max-width: 600px){
-
-  /*      home       */
-   #home .container{
-     background: url(imagens/bg3680.png) no-repeat;
-     background-size: 100% 100%;
-     width: 100vw;
-     
- }
- 
- 
- 
-  /*      BRANCH       */
- 
- #branch .container {
-   width: 100vw;
- }
- 
- #branch .container .content .box{
-   width: 29%;
-   height: 57vh;
- 
- }
- 
- #branch .container .content .box img {
-   width: 180px;
- }
- 
- 
- 
- 
- 
- 
-  /*      ABOUT       */
- 
- #about .container{
- width: 100vw;
- }
- 
- #about .container .title .call{
-   width: 100%;
-   align-items:center;
-   left: 0;
- }
- 
- #about .container .title .call h2{
-   font-size: 1.7rem;
-   margin-bottom: 40px;
-   margin-top: 40px;
-   padding-left: 200px;
-   
-   
- }
- #about .container .title .call p{
-   font-size: 1.2rem;
-   padding-left: 190px;
-  
- }
- 
- 
- 
- 
- 
- 
- 
-  /*      FOOTER      */
- 
- #footer .container{
-     background: url(image/res2.png) no-repeat;
-     background-size: contain;
-     height: 100vh;
-     padding-top: 30px;
- }
- #footer .container .content .right{
-     height:30vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
- }
- #footer .container .content .right button{
-     margin-top: 10px;
- }
- #footer .container .info{
-     height: 50vh;
-     flex-direction: column;
-     align-items: center;
- }
- #footer .container .info .box{
-     width: 80%;
-     align-items: center;
-     margin: 5px;
- }
- #footer .container .info .box h1{
-     margin: 0;
- }
- #footer .container .copyright p{
-     margin-bottom:20px;
- }
- 
- }
- 
 
 
 
 
 
-@media screen and (max-width: 360px){
- 
- 
- /*     HEADER     */
- 
+
+@media screen and (max-width: 412px){
   header .menu-mobile{
       width: 210px;
-      display: block;
-      width: 270px;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.771);
-      position: fixed;
-      top: 0;
-      right: 0;
   }
   header .menu-mobile ul li a{
       font-size: 1rem;
   }
-
-  
-
-
-
-
-  /*     HOME     */
-
-  #home .container {
-    background: url(imagens/bg3mobile.png) no-repeat;
-    width: 200%;
-    
-}
-
-#home .container .content h1{
-    font-size: 1.5rem;
-}
-
-#home .container .content p{
-    font-size: 0.9rem;
-}
-
-#home .container .content span{
-    font-size: 1.5rem;
-}
-
-#home .container .content .button{
-    padding-top:20px ;
-}
-
-#home .container .content .button button{
-    font-size: 0.9rem;
-}
-
-
-
-
- /*      BRANCH       */
-
- #branch .container {
-  width: 200%;
-}
-
-#branch .container .content .box{
-  width: 29%;
-  height: 62vh;
-
-}
-
-#branch .container .content .box img {
-  width: 180px;
-}
-
-
-
-
-
-
- /*      ABOUT       */
-
-#about .container{
-  height: 70vh;
-  width: 200%;
-}
-#about .container .title{
-  margin-top: -20px;
-}
-#about .container .title h1{
-  text-align: center;
-  font-size: 2rem;
-}
-#about .container .title .call h2{
-  margin-top: -30px;
-  font-size: 1.5rem;
-}
-#about .container .title .call p{
-  font-size: 1rem;
-}
-#about .container .title .call button{
-  margin-top: 30px;
-  font-size: 1rem;
-}
-
-
- /*     PRODUCTS    */
-
- #products .container {
-  width: 200%;
+  #home .container .content{
+      width: 90%;
   }
-  
+  #home .container .content h1{
+      font-size: 1.5rem;
+  }
+  #home .container .content p{
+      font-size: 0.9rem;
+  }
+  #home .container .content span{
+      font-size: 1.5rem;
+  }
+  #home .container .content .button{
+      padding-top:20px ;
+  }
+  #home .container .content .button button{
+      font-size: 0.9rem;
+  }
+  #about .container{
+      height: 70vh;
+  }
+  #about .container .title{
+      margin-top: -20px;
+  }
+  #about .container .title h1{
+      text-align: center;
+      font-size: 2rem;
+  }
+  #about .container .title .call h2{
+      margin-top: -30px;
+      font-size: 1.5rem;
+  }
+  #about .container .title .call p{
+      font-size: 1rem;
+  }
+  #about .container .title .call button{
+      margin-top: 30px;
+      font-size: 1rem;
+  }
+  #team .container{
+      height: 85vh;
+  }
+  #team .container .content p{
+      font-size: 1rem;
+      margin-top: 30px;
+  }
+  #news .container{
+      height:100vh;
+  }
+  #news .container .content{
+      height: 50vh;
+  }
+  #news .container .content .box:hover{
+      height: 45vh;
+  }
+  #footer .container{
+      height: 110vh;
+  }
+  #footer .container .content{
+      height: 50vh;
+  }
+  #footer .container .content .left h1{
+      font-size: 1.2rem;
+  }
+  #footer .container .content .left p{
+      font-size: 1rem;
+      margin-top: 20px;
+  }
+  #footer .container .content .right input{
+      padding: 5px 30px;
+      font-size: 1rem;
+  }
+  #footer .container .content .right button{
+      padding: 5px 35px;
+      font-size: 1rem;
+  }
+  #footer .container .info{
+      margin-top: 80px;
+  }
+  #footer .container .info .box h1{
+      font-size: 1rem;
+  }
+  #footer .container .info .box p{
+      font-size: 0.8rem;
+  }
+  #footer .container .info .box a{
+      font-size: 0.8rem;
+  }
+  #footer .container .info .box ion-icon{
+      font-size: 1rem;
+  }
+  #footer .container .copyright p{
+      margin-top: -20px;
+      font-size: 0.7rem;
+  }
 
- /*      TEAM       */
-
-#team .container{
-  height: 85vh;
-  width: 200%;
 }
-#team .container .content p{
-  font-size: 1rem;
-  margin-top: 30px;
-}
-
-
- /*      news       */
-
-#news .container{
-  width: 200%;
-  height:100vh;
-}
-#news .container .content{
-  height: 50vh;
-}
-#news .container .content .box:hover{
-  height: 45vh;
-}
-
-
-
-#article {
-  width: 200%;
-}
-
-
-
-
- /*      FOOTER       */
-
-}
-#footer .container{
-    height: 150vh;
-}
-#footer .container .content{
-    height: 50vh;
-}
-#footer .container .content .left h1{
-    font-size: 1.2rem;
-}
-#footer .container .content .left p{
-    font-size: 1rem;
-    margin-top: 20px;
-}
-#footer .container .content .right input{
-    padding: 5px 30px;
-    font-size: 1rem;
-}
-#footer .container .content .right button{
-    padding: 5px 35px;
-    font-size: 1rem;
-}
-#footer .container .info{
-    margin-top: 80px;
-}
-#footer .container .info .box h1{
-    font-size: 1rem;
-}
-#footer .container .info .box p{
-    font-size: 0.8rem;
-}
-#footer .container .info .box a{
-    font-size: 0.8rem;
-}
-#footer .container .info .box ion-icon{
-    font-size: 1rem;
-}
-#footer .container .copyright p{
-    margin-top: -20px;
-    font-size: 0.7rem;
-}
-    
-
 
 
 
